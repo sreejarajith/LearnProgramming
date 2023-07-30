@@ -1,1 +1,15 @@
 How to Integrate Eclipse and Git
+Steps
+1. Download and install Git
+2. Open command prompt and check the version of git (git --version)
+3. Setup SSH key
+	Run this in command prompt (ssh-keygen -t ed25519 -C "sreeja.rajith2012@gmail.com")
+	This will create public and private keys in folder C:\Users\Sreeja Rajith/.ssh/
+4. Setup SSH key in Git
+	Open settings and go to SSH and GPG keys and create click on new SSH key
+	Open the public file(id_ed25519.pub) in notepad and copy and paste the contents into SSH key in Git
+5. Setup SSH key in Eclipse
+	Open eclipse-Window-Preferences-General-Network Connections-SSH2
+	Make sure the path of ssh from local folder is correct
+	Update the private ssh key name in key - id_ed25519, apply and close
+6. Now we are all set to clone the project from Git using SSH option.
